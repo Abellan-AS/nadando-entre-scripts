@@ -15,7 +15,7 @@ Function Get-SystemStatus {
     # Verificación de nivel de privilegios
     $IsAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
-    # CABECERA ESTÁNDAR
+    # Cabecera
     Write-Host "======================================================" -ForegroundColor Cyan
     Write-Host "  MONITOR DEL SISTEMA" -ForegroundColor White
     Write-Host "  $($HostName) | $($User)" -ForegroundColor Gray
